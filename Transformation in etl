@@ -1,0 +1,60 @@
+-- Transformation in ETL Assignment Solution
+
+-- Question 1: Define Data Transformation in ETL and explain why it is important.
+-- Answer:
+-- Data Transformation in ETL is the process of converting raw extracted data
+-- into a suitable format for analysis and reporting.
+-- It involves cleaning, structuring, and enriching data.
+-- Transformation is important because it ensures data consistency,
+-- improves data quality, and makes data usable for business insights.
+
+-- Question 2: List any four common activities involved in Data Cleaning.
+-- Answer:
+-- 1. Handling missing values.
+-- 2. Removing duplicate records.
+-- 3. Correcting inconsistent data formats.
+-- 4. Removing invalid or incorrect data entries.
+
+-- Question 3: What is the difference between Normalization and Standardization?
+-- Answer:
+-- Normalization scales data to a fixed range, usually between 0 and 1.
+-- Standardization scales data to have a mean of 0 and standard deviation of 1.
+-- Normalization is sensitive to outliers, while standardization is less affected by them.
+-- Both are used to prepare data for machine learning and analytics.
+
+-- Question 4: A dataset has missing values in the “Age” column.
+-- Suggest two techniques to handle this and explain when they should be used.
+-- Answer:
+-- 1. Mean or Median Imputation:
+--    Used when missing values are few and data distribution is not highly skewed.
+-- 2. Removing Rows:
+--    Used when missing values are very few and removing them does not affect analysis.
+
+-- Question 5: Convert the following inconsistent “Gender” entries into a standardized format (“Male”, “Female”):
+-- ["M", "male", "F", "Female", "MALE", "f"]
+-- Answer:
+-- "M", "male", "MALE"  -> Male
+-- "F", "Female", "f"   -> Female
+
+-- Question 6: What is One-Hot Encoding?
+-- Give an example with the categories: “Red, Blue, Green”.
+-- Answer:
+-- One-Hot Encoding converts categorical values into binary columns.
+-- Example:
+-- Red   -> [1, 0, 0]
+-- Blue  -> [0, 1, 0]
+-- Green -> [0, 0, 1]
+-- It prevents assigning ordinal meaning to categorical data.
+
+-- Question 7: Explain the difference between Data Integration and Data Mapping in ETL.
+-- Answer:
+-- Data Integration is the process of combining data from multiple sources into one system.
+-- Data Mapping defines how source fields are matched to target fields.
+-- Integration focuses on data movement, while mapping focuses on data relationships.
+
+-- Question 8: Explain why Z-score Standardization is preferred over Min-Max Scaling when outliers exist.
+-- Answer:
+-- Z-score Standardization uses mean and standard deviation.
+-- It is less affected by extreme values.
+-- Min-Max Scaling compresses most data points when outliers exist.
+-- Therefore, Z-score is preferred when datasets contain outliers.
